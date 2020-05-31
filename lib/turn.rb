@@ -35,8 +35,12 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index) == true
+<<<<<<< HEAD
     move(board, index)
     display_board(board)
+=======
+    move(board, index, token = "X")
+>>>>>>> 6b4d741d0d4a72c262bdab5cc9431b4208f92f2d
   else
     turn(board)
   end
